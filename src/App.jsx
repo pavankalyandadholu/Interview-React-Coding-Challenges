@@ -1,10 +1,16 @@
 import Accordian from "./Components/Accordian";
+import RandomColor from "./Components/Random Color/RandomColor";
 
 export default function App() {
   return (
     <>
-    <h1 className="parent">Hello world </h1>
+    {/* Accordian Project */}
     <Accordian/>
+    <hr className=" border-2" />
+    {/* Color */}
+    <RandomColor/>
+    <hr className=" border-2" />
+    
     </>
   )
 }
