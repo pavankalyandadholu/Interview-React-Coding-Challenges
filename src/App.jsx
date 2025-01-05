@@ -1,5 +1,6 @@
 import Accordian from "./Components/Accordian";
 import RandomColor from "./Components/Random Color/RandomColor";
+import StarRating from "./Components/Star Rating/StarRating";
 
 export default function App() {
   return (
@@ -10,7 +11,7 @@ export default function App() {
     {/* Color */}
     <RandomColor/>
     <hr className=" border-2" />
-    
+      <StarRating noOfStars={10}/>
     </>
   )
 }

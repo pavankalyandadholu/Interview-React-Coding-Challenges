@@ -38,7 +38,7 @@ const RandomColor = () => {
 
 
   return (
-    <div className=" p-2 container h-[100vh]">
+    <div className=" mx-auto  p-2 container h-[100vh]">
         <h1 className=" text-2xl font-semibold text-center uppercase mt-5">Random Color </h1>
         <div className=" text-lg  mx-auto flex items-center justify-center w-full mt-2">
 
@@ -46,7 +46,7 @@ const RandomColor = () => {
         <button onClick={()=>setTypeOfColor('rgb')} className=" border-2 px-4 py-2 mt-4 mx-3 rounded-md hover:bg-gray-200">Create RGB Color </button>
         <button onClick={genarateRandomColor} className=" border-2 px-4 py-2 mt-4 mx-3 rounded-md hover:bg-gray-200">Generate Random Color </button>
         </div>
-        <div style={{backgroundColor:color}} className=" rounded-lg  flex justify-center text-white items-center flex-col h-[50%] mt-6">
+        <div style={{backgroundColor:color}} className=" max-w-2xl  mx-auto rounded-lg  flex justify-center text-white items-center flex-col h-[50%] mt-6">
             <h1 className=" text-3xl text-center">{typeOfColor==='hex'?'HEX':'RGB'} Color</h1>
             <h3 onDoubleClick={copytoClipBoard} className=" cursor-pointer text-xl  text-center mt-3">
                 {color}
